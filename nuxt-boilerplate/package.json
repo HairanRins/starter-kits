@@ -1,0 +1,52 @@
+{
+  "name": "nuxt-boilerplate",
+  "version": "1.0.0",
+  "description": "Professional Nuxt 4 full-stack boilerplate with PostgreSQL, auth, CRUD, search",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "nuxt dev",
+    "build": "nuxt build",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "db:generate": "npx prisma generate",
+    "db:push": "npx prisma db push",
+    "db:migrate": "npx prisma migrate dev",
+    "db:studio": "npx prisma studio",
+    "db:seed": "npx prisma db seed",
+    "db:reset": "npx prisma migrate reset",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
+    "typecheck": "nuxi typecheck"
+  },
+  "prisma": {
+    "seed": "tsx prisma/seed.ts"
+  },
+  "dependencies": {
+    "nuxt": "^4.0.0",
+    "vue": "latest"
+  },
+  "devDependencies": {
+    "@nuxt/eslint": "^1.0.0",
+    "@prisma/client": "^6.0.0",
+    "@types/bcrypt": "^5.0.2",
+    "@types/jsonwebtoken": "^9.0.7",
+    "@types/node": "^22.0.0",
+    "@vue/test-utils": "^2.4.6",
+    "bcrypt": "^5.1.1",
+    "eslint": "^9.0.0",
+    "h3": "^1.12.0",
+    "jsonwebtoken": "^9.0.2",
+    "playwright": "^1.48.0",
+    "prisma": "^6.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0",
+    "vitest": "^2.1.0",
+    "vue-router": "^4.4.0",
+    "vue-tsc": "^3.3.4",
+    "zod": "^3.23.0"
+  }
+}
